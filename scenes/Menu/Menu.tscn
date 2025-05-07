@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dncxujshbxt8f" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://nwbl03ueqyor" path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cey6fuiebmhpe" path="res://scenes/Buttons/Reset/Reset.tscn" id="4"]
-[ext_resource type="Script" uid="uid://ba56weqd7il8n" path="res://scenes/Menu/Menu.gd" id="5"]
+[ext_resource type="Script" path="res://scenes/Menu/Menu.gd" id="5"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(1519.98, 67.3924)
@@ -48,3 +48,5 @@ offset_right = 668.0
 offset_bottom = 144.0
 text = "Cantidad de Instancias:
 "
+
+[connection signal="button_down" from="Reset" to="." method="_on_reset_button_down"]
