@@ -1,6 +1,6 @@
 extends TextureButton
 
-@onready var BlockViolet = preload("res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn")
+@onready var BlockViolet = preload("res://scenes/Blocks/Violet/BlockViolet.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
